@@ -23,10 +23,10 @@ namespace FPTUniversityPE.BusinessObject.Data
 			base.OnModelCreating(modelBuilder);
 		}
 
-		public DbSet<ArtWork> artWorks { get; set; }
-		public DbSet<Museums> Museums { get; set; }
-		public DbSet<User> Users { get; set; }
-		public DbSet<Role> Roles { get; set; }
+		public DbSet<ArtWork>? artWorks { get; set; }
+		public DbSet<Museums>? Museums { get; set; }
+		public DbSet<User>? Users { get; set; }
+		public DbSet<Role>? Roles { get; set; }
 	}
 }
 

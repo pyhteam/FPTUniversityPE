@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FPTUniversityPE.DataAccess.UserDao
 {
-	internal interface IUserDA : IBaseDAO<User,User>
+	internal interface IUserDA : IBaseDAO<User>
 	{
 	}
 }

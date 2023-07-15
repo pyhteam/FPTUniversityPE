@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace FPTUniversityPE.DataAccess.DAOs
 {
-	internal interface IBaseDAO<T1,T2>
+	internal interface IBaseDAO<T1>
 	{
-		Task<T2> GetAll();
-		Task<T2> GetByIdAsync(string id);
+		Task<List<T1>> GetAll();
+		Task<T1> GetByIdAsync(int id);
 		Task<bool> CreateAsync(T1 entity);
-		Task<int> UpdateAsync(T1 entity, string id);
-		Task<int> DeleteAsync(string id);
+		Task<int> UpdateAsync(T1 entity, int id);
+		Task<int> DeleteAsync(int id);
 	}
 }
